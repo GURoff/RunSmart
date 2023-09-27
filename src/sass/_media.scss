@@ -1,0 +1,33 @@
+// for XL devices
+@media (max-width: 1200px) {
+
+}
+
+// for MEDIUM devices
+@media (max-width: 991px) {
+    .promo {
+        &__header {
+            font-size: 38px;
+        }
+        &__subheader {
+            font-size: 24px;
+        }
+    }
+}
+
+// for SMALL devices
+@media (max-width: 767px) {
+    .promo {
+        &__header {
+            font-size: 35px;
+        }
+        &__subheader {
+            font-size: 18px;
+        }
+    }
+}
+
+// for XS devices
+@media (max-width: 575px) {
+
+}
