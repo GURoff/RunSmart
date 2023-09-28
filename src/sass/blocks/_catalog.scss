@@ -1,0 +1,45 @@
+.catalog {
+    padding-bottom: 89px; 
+    .title {
+        font-weight: 400;
+    }
+    &__tabs {
+        margin-top: 50px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    &__tab {
+        width: 222px;
+        height: 52px;
+        border: 2px solid #d0d0d0;
+        color: #6B6B6B;
+        text-align: center;
+        line-height: 48px;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        transform: skewX(-25deg);
+        margin: 0 5px;
+        cursor: pointer;
+        transition: 0.5s all;
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color;
+            border: none;
+        }
+        div {
+            transform: skewX(25deg);
+        }
+        &_active {
+            color: #fff;
+            background-color: $main-color;
+            border:none;
+        }
+    }
+    &__content {
+
+    }
+}

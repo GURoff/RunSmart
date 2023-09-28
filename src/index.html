@@ -15,16 +15,28 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="" />
-    <!-- Connect styles -->
+    <!-- Connect bootstrap grid and reboot -->
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Connect Tiny slider  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
     <!-- Connect min.css -->
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body>
     <!-- =====First section - Promo===== -->
-    <div class="promo">
+    <section class="promo">
       <div class="container">
+        <!-- Header -->
         <header class="header">
           <a href="#" class="header__logo">
             <img src="./icons/runningMan_logo.png" alt="running man logo" />
@@ -67,9 +79,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- =====Second section - Our Advatages===== -->
-    <div class="advantage">
+    <section class="advantage">
       <div class="container">
         <h2 class="title">OUR ADVANTAGES</h2>
         <div class="advantage__wrapper">
@@ -101,7 +113,67 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- =====Third section - Free consultation===== -->
+    <section class="consultation">
+      <div class="container">
+        <h2 class="title title_left">
+          Get a free consultation on choosing <br />a heart rate monitor
+        </h2>
+        <div class="consultation__descr">
+          Just fill out the application form and we will <br />
+          call you back within 10 minutes
+        </div>
+        <form class="feed-form" action="#">
+          <input name="name" required placeholder="Your name" type="text" />
+          <input name="phone" required placeholder="Your phone" type="tel" />
+          <input name="email" required placeholder="Your email" type="email" />
+
+          <button class="button button_submit">order a consultation</button>
+        </form>
+      </div>
+    </section>
+    <!-- =====Fourth section - Carousel===== -->
+    <section class="carousel">
+      <div class="container">
+        <div class="carousel__inner">
+          <div>
+            <img src="img/slide1.png" alt="first slide" />
+          </div>
+          <div>
+            <img src="img/slide2.png" alt="second slide" />
+          </div>
+          <div>
+            <img src="img/slide3.png" alt="third slide" />
+          </div>
+        </div>
+        <button type="button" class="prev">
+          <img src="icons/chevronLeft.png" alt="" />
+        </button>
+        <button type="button" class="next">
+          <img src="icons/chevronRight.png" alt="" />
+        </button>
+      </div>
+    </section>
+    <!-- Fifth section - Catalog -->
+    <section class="catalog">
+      <div class="container">
+        <h2 class="title">Catalog of heart rate monitors</h2>
+        <ul class="catalog__tabs">
+          <li class="catalog__tab catalog__tab_active">
+            <div>For fitness</div>
+          </li>
+          <li class="catalog__tab"><div>for running</div></li>
+          <li class="catalog__tab"><div>for triathlon</div></li>
+        </ul>
+        <div class="catalog__content"></div>
+        <div class="catalog__content"></div>
+        <div class="catalog__content"></div>
+      </div>
+    </section>
+    <!-- Connect Tiny slider script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <!-- Connect main js file -->
     <script src="js/script.js"></script>
   </body>
 </html>

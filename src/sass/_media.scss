@@ -10,7 +10,7 @@
             font-size: 38px;
         }
         &__subheader {
-            font-size: 24px;
+            font-size: 20px;
         }
     }
 }
@@ -19,15 +19,69 @@
 @media (max-width: 767px) {
     .promo {
         &__header {
-            font-size: 35px;
+            font-size: 32px;
         }
         &__subheader {
-            font-size: 18px;
+            font-size: 16px;
         }
+    }
+    .consultation {
+        position: relative;
+        &__descr {
+            font-size: 18px;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+    .title {
+        &_left {
+            text-align: center;
+            min-width: 350px;
+            font-size: 26px;
+            line-height: 40px;
+        }
+    }
+    .feed-form {
+        position: absolute;
+        left: 25%;
+        transform: translateX(+12%);
     }
 }
 
 // for XS devices
 @media (max-width: 575px) {
+    .promo {
+        &__header {
+            font-size: 25px;
+        }
+        &__subheader {
+            font-size: 15px;
+        }
+    }
 
+    .header {
+        &__phone {
+            font-size: 16px;
+        }
+        &__logo {
+            img {
+                width: 90%;
+            }
+        }
+        &__official {
+            padding-right: 25px;
+        }
+    }
+    .title {
+        font-size: 25px;
+    }
+    .advantage {
+        padding: 50px 0 50px 0;
+        &__item {
+            max-width: 160px;
+        }
+        &__subtitle {
+            font-size: 14px;
+        }
+    }
 }
