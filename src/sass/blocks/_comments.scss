@@ -1,0 +1,35 @@
+.comments {
+    min-height: 920px;
+    background: #FFF;
+    padding: 80px 0 50px 0;
+    &_block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+    &_round {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 60px;
+    }
+    &_subtitle {
+        color: #0D0D0D;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+    }
+    &_item {
+        color: #646464;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &_text {
+        color: #0D0D0D;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+}

@@ -84,4 +84,29 @@
             font-size: 14px;
         }
     }
+
+    .feed-form {
+        left: 18%;
+    }
+
+    .carousel {
+        .prev, .next {
+            display: none;
+        }
+    }
+
+    .catalog {
+        &-item {
+            margin: 0 auto;
+            margin-bottom: 20px;
+            &__img {
+                height: 180px;
+            }
+            &__list {
+                li {
+                    font-size: 16px;
+                }
+            }
+        } 
+    }
 }

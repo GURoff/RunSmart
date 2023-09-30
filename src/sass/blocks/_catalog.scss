@@ -1,5 +1,4 @@
 .catalog {
-    padding-bottom: 89px; 
     .title {
         font-weight: 400;
     }
@@ -40,16 +39,16 @@
         }
     }
     &__content {
-        margin-top: 57px;
+        margin-top: 60px;
         display: none;
         justify-content: space-between;
         flex-wrap: wrap;
-        &:active {
+        &_active {
             display: flex;
         }
     }
     &-item {
-        width: 303px;
+        width: 300px;
         min-height: 442px;
         border: 2px solid #E8E8E8;
         padding: 20px 20px 20px 20px;
@@ -133,7 +132,7 @@
             transform: translateX(0%);
             padding-right: 20px;
             transition: 0.5s all;
-            padding-left: 19px;
+            padding-left: 20px;
             margin-bottom: 0;
             list-style-type: none;
             &_active {
@@ -162,7 +161,7 @@
             position: absolute;
             bottom: 0;
             left: 50%;
-            transform: translateX(calc(-50% - 19px));
+            transform: translateX(calc(-50% - 20px));
             display: block;
             color: $main-color;
             font-size: 14px;
