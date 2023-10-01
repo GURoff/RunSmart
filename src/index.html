@@ -49,7 +49,9 @@
             <a href="tel:+XXXXXXXXXXXX" class="header__phone">
               +XXX XXX-XXX-XXX
             </a>
-            <button class="button">Request a call</button>
+            <button data-modal="consultation" class="button">
+              Request a call
+            </button>
           </div>
         </header>
 
@@ -72,7 +74,9 @@
               We will answer all questions
             </div>
           </div>
-          <button class="button button_main">order a consultation</button>
+          <button data-modal="consultation" class="button button_main">
+            order a consultation
+          </button>
           <div class="promo__link">
             or
             <a href="#">GO TO CATALOG</a>
@@ -117,16 +121,16 @@
     <!-- =====Third section - Free consultation===== -->
     <section class="consultation">
       <div class="container">
-        <h2 class="title title_left">
+        <h2 class="title title_consult">
           Get a free consultation on choosing <br />a heart rate monitor
         </h2>
         <div class="consultation__descr">
           Just fill out the application form and we will <br />
           call you back within 10 minutes
         </div>
-        <form class="feed-form" action="#">
+        <form id="consultation-form" class="feed-form" action="#">
           <input name="name" required placeholder="Your name" type="text" />
-          <input name="phone" required placeholder="Your phone" type="tel" />
+          <input name="phone" required placeholder="Your phone" />
           <input name="email" required placeholder="Your email" type="email" />
 
           <button class="button button_submit">order a consultation</button>
@@ -623,10 +627,80 @@
         </div>
       </div>
     </section>
+    <!--===== Footer ===== -->
+    <footer class="footer">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d538.1623522578595!2d14.420712714966418!3d50.087298007521674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95b1c2bb6b99%3A0x1e523edf235340b4!2zTWFyacOhbnNrw70gc2xvdXA!5e0!3m2!1sru!2scz!4v1696168781772!5m2!1sru!2scz"
+        width="100%"
+        height="630"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <div class="footer__info">
+        <address class="footer__addr">
+          Marian column, Old Town Square, <br />
+          Prague 1-Old Town
+        </address>
+        <a class="footer__phone" href="tel:+xxxxxxxxxxxx">+xxx-xxx-xxx-xxx</a>
+        <div class="footer__social">
+          <a href="#" class="footer__social-item">
+            <img src="icons/socialMedia/facebook.png" alt="facebook"
+          /></a>
+          <a href="#" class="footer__social-item">
+            <img src="icons/socialMedia/instagram.png" alt="instagram"
+          /></a>
+          <a href="#" class="footer__social-item"
+            ><img src="icons/socialMedia/pinterest.png" alt="pinterest"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <!--===== Modal windows ===== -->
+    <div class="overlay">
+      <div class="modals" id="consultation">
+        <div class="modals__close">&times;</div>
+        <div class="modals__subtitle">Just fill out the application form</div>
+        <div class="modals__descr">
+          and we will call you back within 10 minutes
+        </div>
+        <form class="feed-form feed-form_mt25" action="#">
+          <input name="name" placeholder="Your name" type="text" />
+          <input name="phone" placeholder="Your phone" />
+          <input name="email" placeholder="Your email" type="email" />
+
+          <button class="button button_submit">order a consultation</button>
+        </form>
+      </div>
+
+      <div class="modals" id="order">
+        <div class="modals__close">&times;</div>
+        <div class="modals__subtitle">Your order:</div>
+        <div class="modals__descr">Polar FT1 heart rate monitor</div>
+        <form class="feed-form feed-form_mt25" action="#">
+          <input name="name" required placeholder="Your name" type="text" />
+          <input name="phone" required placeholder="Your phone" />
+          <input name="email" required placeholder="Your email" type="email" />
+
+          <button class="button button_submit">Buy</button>
+        </form>
+      </div>
+
+      <div class="modals modals_mini" id="thanks">
+        <div class="modals__close">&times;</div>
+        <div class="modals__subtitle">Thank you for your application!</div>
+        <div class="modals__descr">Our manager will contact you soon!</div>
+      </div>
+    </div>
     <!-- Connect jQuery script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Connect Tiny slider script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <!-- Connect jQuery Validate script-->
+    <script src="js/jquery.validate.min.js"></script>
+    <!-- Connect jQuery masckedInput script-->
+    <script src="js/jquery.maskedinput.min.js"></script>
     <!-- Connect main js file -->
     <script src="js/script.js"></script>
   </body>

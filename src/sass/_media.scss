@@ -1,8 +1,3 @@
-// for XL devices
-@media (max-width: 1200px) {
-
-}
-
 // for MEDIUM devices
 @media (max-width: 991px) {
     .promo {
@@ -11,6 +6,11 @@
         }
         &__subheader {
             font-size: 20px;
+        }
+    }
+    .carousel {
+        .prev, .next {
+            display: none;
         }
     }
 }
@@ -43,8 +43,13 @@
     }
     .feed-form {
         position: absolute;
-        left: 25%;
+        left: 0;
         transform: translateX(+12%);
+    }
+    .carousel {
+        .prev, .next {
+            display: none;
+        }
     }
 }
 
@@ -76,7 +81,7 @@
         font-size: 25px;
     }
     .advantage {
-        padding: 50px 0 50px 0;
+        padding: 25px 0 25px 0;
         &__item {
             max-width: 160px;
         }
@@ -85,8 +90,14 @@
         }
     }
 
+    .consultation {
+        &_descr {
+            font-size: 14px;
+        }
+    }
+
     .feed-form {
-        left: 18%;
+        left: -10%;
     }
 
     .carousel {
@@ -108,5 +119,59 @@
                 }
             }
         } 
+        &__tab {
+            font-size: 10px;
+        }
+    }
+    .comments {
+        padding: 22px 0 36px 0;
+        &_block {
+            margin-top: 20px;
+        }
+        &_subtitle {
+            font-size: 18px
+        } 
+        &_round {
+            width: 130px;
+            margin-right: 25px;
+        }
+        &_descr {
+            margin-top: 15px;
+        }     
+    }
+    .modals {
+        width: 300px;
+        &__close {
+            right: 5px;
+            line-height: 40px;
+        }
+        input {
+            width: 95%;
+        }
+    }
+    .button {
+        &_submit {
+            width: 95%;
+        }
+    }
+
+    .footer {
+        &__info {
+            width: 230px;
+            height: 180px;
+            padding: 25px 25px 28px 26px;
+        }
+        &__addr {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        &__phone {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        &__social-item {
+            width: 35px;
+            height: 35px;
+        }
     }
 }
