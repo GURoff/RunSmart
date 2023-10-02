@@ -24,6 +24,8 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <!-- Connect animation -->
+    <link rel="stylesheet" href="css/animate.css" />
     <!-- Connect Tiny slider  -->
     <link
       rel="stylesheet"
@@ -34,7 +36,7 @@
   </head>
   <body>
     <!-- =====First section - Promo===== -->
-    <section class="promo">
+    <section id="up" class="promo">
       <div class="container">
         <!-- Header -->
         <header class="header">
@@ -90,7 +92,11 @@
         <h2 class="title">OUR ADVANTAGES</h2>
         <div class="advantage__wrapper">
           <div class="advantage__item">
-            <img src="./icons/cup_logo.png" alt="cup logo" />
+            <img
+              src="./icons/cup_logo.png"
+              alt="cup logo"
+              class="advantage__icon"
+            />
             <div class="advantage__subtitle">Sharing our experience</div>
             <div class="advantage__descr">
               Our employees are always ready to share their experience, as they
@@ -99,7 +105,11 @@
             </div>
           </div>
           <div class="advantage__item">
-            <img src="./icons/heart_logo.png" alt="heart logo" />
+            <img
+              src="./icons/heart_logo.png"
+              alt="heart logo"
+              class="advantage__icon advantage__icon_animated"
+            />
             <div class="advantage__subtitle">We care about health</div>
             <div class="advantage__descr">
               We work to ensure that your sports activities benefit your health
@@ -107,7 +117,11 @@
             </div>
           </div>
           <div class="advantage__item">
-            <img src="./icons/shoe_logo.png" alt="shoe logo" />
+            <img
+              src="./icons/shoe_logo.png"
+              alt="shoe logo"
+              class="advantage__icon"
+            />
             <div class="advantage__subtitle">Learn to run</div>
             <div class="advantage__descr">
               We help you learn proper running technique! We are friends with
@@ -570,7 +584,11 @@
     <section class="comments">
       <div class="container">
         <h2 class="title">customer reviews</h2>
-        <div class="comments_block">
+        <div
+          class="comments_block animate__animated animate__fadeInUp wow"
+          data-wow-duration="1s"
+          data-wow-delay="1s"
+        >
           <div class="comments_round">
             <img src="./img/firstUserComment.png" alt="Irina photo" />
           </div>
@@ -588,7 +606,11 @@
             </div>
           </div>
         </div>
-        <div class="comments_block">
+        <div
+          class="comments_block animate__animated animate__fadeInUp wow"
+          data-wow-duration="1s"
+          data-wow-delay="1s"
+        >
           <div class="comments_round">
             <img src="./img/secondUserComment.png" alt="Ivan photo" />
           </div>
@@ -606,7 +628,11 @@
             </div>
           </div>
         </div>
-        <div class="comments_block">
+        <div
+          class="comments_block animate__animated animate__fadeInUp wow"
+          data-wow-duration="1s"
+          data-wow-delay="1s"
+        >
           <div class="comments_round">
             <img src="./img/thirdUserComment.png" alt="Yulia photo" />
           </div>
@@ -693,6 +719,13 @@
         <div class="modals__descr">Our manager will contact you soon!</div>
       </div>
     </div>
+
+    <!-- Chevron logo UP -->
+    <a href="#up" class="pageup">
+      <img src="icons/circle-chevron-up-solid.svg" alt="chevron up" />
+    </a>
+    <!-- Connect WOW -->
+    <script src="js/wow.min.js"></script>
     <!-- Connect jQuery script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Connect Tiny slider script -->

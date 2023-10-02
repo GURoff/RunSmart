@@ -1,1 +1,4 @@
 *node_modules/*
+src/mailer/smart.php
+dist/mailer/smart.php
+src/mailer/

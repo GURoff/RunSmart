@@ -1,5 +1,17 @@
 @import "base/variables";
 @import "base/mixins";
+@import "base/animations";
+
+* {
+	font-family: 'MuseoModerno', sans-serif;
+}
+
+.container {
+	position: relative;
+	max-width: 950px;
+	margin: 0 auto;
+}
+
 @import "blocks/promo";
 @import "blocks/header";
 @import "blocks/buttons";
@@ -12,15 +24,7 @@
 @import "blocks/comments";
 @import "blocks/footer";
 @import "blocks/modals";
+@import "blocks/pageup";
 @import "media";
 
-* {
-	font-family: 'MuseoModerno', sans-serif;
-}
-
-.container {
-	position: relative;
-	max-width: 950px;
-	margin: 0 auto;
-}
 
