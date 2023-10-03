@@ -139,7 +139,7 @@
                 margin-left: 0px;
                 transform: translateX(-100%);
             }
-            li {
+            span {
                 position: relative;
                 color: #555;
                 font-size: 14px;
@@ -153,7 +153,7 @@
                     height: 8px;
                     background-color: $main-color;
                     left: -14px;
-                    top: 6px;
+                    top: 8px;
                 }
             }
         }
